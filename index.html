@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation Page</title>
+  </head>
+  <body>
+    <main id="main-doc">
+      <nav id="navbar">
+        <header>Product Design Documentation</header>
+        <a href="#introduction" class="nav-link">Introduction</a>
+      </nav>
+
+      <section class="main-section" id="introduction">
+        <header>Introduction</header>
+        <p>
+          Product design is the process of creating solutions that solve real
+          user problems while balancing usability, business objectives, and
+          technical feasibility. It combines research, strategy, visual design,
+          and interaction design to produce products that are functional,
+          intuitive, and meaningful.
+        </p>
+
+        <p>
+          Modern product design focuses not only on how a product looks, but
+          also on how it works and how users experience it. A successful product
+          aligns user needs with business goals while remaining technically
+          achievable.
+        </p>
+      </section>
+
+      <section class="main-section" id="What_is_product_design?">
+        <header>What Is Product Design?</header>
+        <p>
+          Product design is a multidisciplinary field that connects design,
+          technology, and business. It involves identifying user problems,
+          defining requirements, designing solutions, and refining them through
+          testing.
+        </p>
+
+        <p>
+          A product designer must think about usability, accessibility,
+          performance, scalability, and long-term maintainability. The goal is
+          not just to create attractive interfaces, but to build systems that
+          provide value and clarity to users.
+        </p>
+      </section>
+
+      <section class="main-section" id="Core_Principles_of_Product_Design">
+        <header>Core Principles of Product Design</header>
+        <dl>
+          <dt>User-Centered Design</dt>
+          <dd>
+            All design decisions should be based on real user needs. This
+            involves research, interviews, usability testing, and continuous
+            feedback.
+          </dd>
+
+          <dt>Simplicity</dt>
+          <dd>
+            Interfaces should reduce cognitive load. Users should not struggle
+            to understand how to interact with a product.
+          </dd>
+
+          <dt>Consistency</dt>
+          <dd>
+            Visual elements, spacing, typography, and interaction patterns
+            should remain consistent throughout the product to build trust and
+            familiarity.
+          </dd>
+
+          <dt>Accessibility</dt>
+          <dd>
+            Products should be usable by people of different abilities. Proper
+            semantic structure, contrast, and assistive support are essential.
+          </dd>
+
+          <dt>Iteration</dt>
+          <dd>
+            Design is an evolving process. Prototypes are tested, refined, and
+            improved over time.
+          </dd>
+        </dl>
+      </section>
+
+      <section class="main-section" id="The_Product_Design_Process">
+        <header>The Product Design Process</header>
+        <ol>
+          <li>
+            <p>Research</p>
+            <p>Understanding users, competitors, and market needs.</p>
+          </li>
+          <li>
+            <p>Define</p>
+            <p>Creating problem statements, personas, and user journeys.</p>
+          </li>
+          <li>
+            <p>Ideate</p>
+            <p>
+              Generating possible solutions through sketches and wireframes.
+            </p>
+          </li>
+          <li>
+            <p>Prototype</p>
+            <p>Building interactive representations of the product.</p>
+          </li>
+          <li>
+            <p>Test</p>
+            <p>Gathering feedback and identifying usability issues.</p>
+          </li>
+          <li>
+            <p>Implement</p>
+            <p>Collaborating with developers to bring the design to life.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="main-section" id="Design_Systems_and_Design_Tokens">
+        <header>Design Systems and Design Tokens</header>
+        <p>A design system is a collection of reusable components and guidelines that ensure consistency across a product. Design tokens are the smallest reusable values in a design system, such as colors, spacing, or typography rules.</p>
+        <p>Design Tokens with CSS Variables</p>
+        <pre>
+            <code>
+                :root {
+                    --primary-color: #2563eb;
+                    --background-color: #f3f4f6;
+                    --font-base:'Arial',sans-serif;
+                    --spacing-medium: 16px;
+                }
+
+                body {
+                font-family: var(--font-base);
+                background-color: var(--background-color);
+                }
+
+            </code>
+        </pre>
+        <p>This approach centralizes styling values, making it easier to maintain consistency and update designs at scale.</p>
+      </section>
+
+      <section class="main-section" id="Accessible_HTML_Structure">
+        <header>Accessible HTML Structure</header>
+        <p>Semantic HTML improves usability and accessibility by clearly defining content structure.</p>
+        <p>Accessible Button Component</p>
+        <pre>
+            <code>
+                &lt;button class="primary-btn" aria-label="Submit Form"&gt;
+                  Submit
+                &lt;/button&gt;
+            </code>
+        </pre>
+        <p>The button element provides built-in accessibility. The aria-label improves screen reader clarity.</p>
+      </section>
+
+      <section class="main-section" id="Responsive_Layout_Techniques">
+        <header>Responsive Layout Techniques</header>
+        <p>Modern products must work across multiple devices. Responsive design ensures adaptability.</p>
+        <p>Flexbox Layout</p>
+        <pre>
+            <code>
+                .container {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 20px;
+                }
+
+                .card {
+                    flex: 1;
+                    margin: 10px;
+                }
+            </code>
+        </pre>
+        <p>Flexbox allows flexible alignment and distribution of space, making layouts adaptable to different screen sizes.</p>
+      </section>
+    </main>
+  </body>
+</html>
+
+<!-- content used for this project was generated by AI for the sake of practice and the assignment -->
