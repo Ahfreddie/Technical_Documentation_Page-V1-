@@ -4,12 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <main id="main-doc">
       <nav id="navbar">
         <header>Product Design Documentation</header>
         <a href="#introduction" class="nav-link">Introduction</a>
+        <a href="#What_is_product_design?" class="nav-link">What Is Product Design?</a>
+        <a href="#Core_Principles_of_Product_Design" class="nav-link">Core Principles of Product Design</a>
+        <a href="#The_Product_Design_Process" class="nav-link">The Product Design Process</a>
+        <a href="#Design_Systems_and_Design_Tokens" class="nav-link">Design Systems and Design Tokens</a>
+        <a href="#Accessible_HTML_Structure" class="nav-link">Accessible HTML Structure</a>
+        <a href="#Responsive_Layout_Techniques" class="nav-link">Responsive Layout Techniques</a>
+        <a href="#Form_Design_and_Usability" class="nav-link">Form Design and Usability</a>
+        <a href="#Interactive_Behavior_with_JavaScript" class="nav-link">Interactive Behavior with JavaScript</a>
+        <a href="#Product_Design_vs_UX_vs_UI" class="nav-link">Product Design vs UX vs UI</a>
+        <a href="#Common_Challenges_in_Product_Design" class="nav-link">Common Challenges in Product Design</a>
+        <a href="#Conclusion" class="nav-link">Conclusion</a>
+        <a href="#Resources" class="nav-link">Resources</a>
       </nav>
 
       <section class="main-section" id="introduction">
@@ -119,7 +132,7 @@
       <section class="main-section" id="Design_Systems_and_Design_Tokens">
         <header>Design Systems and Design Tokens</header>
         <p>A design system is a collection of reusable components and guidelines that ensure consistency across a product. Design tokens are the smallest reusable values in a design system, such as colors, spacing, or typography rules.</p>
-        <p>Design Tokens with CSS Variables</p>
+        <p>Code Example 1: Design Tokens with CSS Variables</p>
         <pre>
             <code>
                 :root {
@@ -142,7 +155,7 @@
       <section class="main-section" id="Accessible_HTML_Structure">
         <header>Accessible HTML Structure</header>
         <p>Semantic HTML improves usability and accessibility by clearly defining content structure.</p>
-        <p>Accessible Button Component</p>
+        <p>Code Example 2: Accessible Button Component</p>
         <pre>
             <code>
                 &lt;button class="primary-btn" aria-label="Submit Form"&gt;
@@ -156,7 +169,7 @@
       <section class="main-section" id="Responsive_Layout_Techniques">
         <header>Responsive Layout Techniques</header>
         <p>Modern products must work across multiple devices. Responsive design ensures adaptability.</p>
-        <p>Flexbox Layout</p>
+        <p>Code Example 3: Flexbox Layout</p>
         <pre>
             <code>
                 .container {
@@ -173,6 +186,75 @@
             </code>
         </pre>
         <p>Flexbox allows flexible alignment and distribution of space, making layouts adaptable to different screen sizes.</p>
+      </section>
+
+       <section class="main-section" id="Form_Design_and_Usability">
+        <header>Form Design and Usability</header>
+        <p>Forms are critical interaction points in digital products. Clear labels and proper input types improve usability.</p>
+        <p>Code Example 4: Accessible Form Structure</p>
+        <pre>
+            <code>
+                &lt;form>
+                  &lt;label for="email"&gt;Email Address&lt;/label&gt;
+                  &lt;input type="email" id="email" name="email" required&gt;
+
+                  &lt;button type="submit"&gt;Sign Up&lt;/button&gt;
+                &lt;/form&gt;
+            </code>
+        </pre>
+        <p>The label is explicitly associated with the input field using the for and id attributes, improving accessibility and clarity.</p>
+      </section>
+
+      <section class="main-section" id="Interactive_Behavior_with_JavaScript">
+        <header>Interactive Behavior with JavaScript</header>
+        <p>Product design also involves interaction design. Even simple behaviors enhance user experience.</p>
+        <p>Code Example 5: Basic Interaction Logic</p>
+        <pre>
+            <code>
+                const button = document.querySelector('.primary-btn');
+
+                button.addEventListener('click', function() {
+                  alert('Form submitted successfully!');
+                });
+            </code>
+        </pre>
+        <p>This demonstrates event-driven interaction, where user actions trigger feedback. Providing feedback helps users understand system responses.</p>
+      </section>
+
+      <section class="main-section" id="Product_Design_vs_UX_vs_UI">
+        <header>Product Design vs UX vs UI</header>
+        <ul>
+          <li> <strong>Product Design</strong>: focuses on the overall lifecycle of the product, including business strategy and technical considerations.</li>
+          <li><strong>UX Design</strong>: focuses specifically on user experience and usability.</li>
+          <li><strong>UI Design</strong>: focuses on visual presentation, layout, color, and typography.</li>
+        </ul>
+
+        <p>In many modern teams, these roles overlap.</p>
+      </section>
+
+      <section class="main-section" id="Common_Challenges_in_Product_Design">
+        <header>Common Challenges in Product Design</header>
+        <ol>
+          <li> Balancing user needs with business goals</li>
+          <li>Working within technical constraints</li>
+          <li>Maintaining consistency across large systems</li>
+          <li>Avoiding feature overload</li>
+          <li>Meeting deadlines while preserving quality</li>
+        </ol>
+      </section>
+
+      <section class="main-section" id="Conclusion">
+        <header>Conclusion</header>
+        <p>Product design is a strategic and creative discipline that transforms ideas into functional solutions. It requires empathy, structured thinking, collaboration, and continuous iteration.</p>
+
+        <p>Successful product design considers not only aesthetics but also usability, accessibility, scalability, and long-term sustainability. By combining research, design systems, responsive techniques, and interaction logic, designers can create products that deliver meaningful user experiences.</p>
+      </section>
+
+      <section class="main-section" id="Resources">
+        <header>Resources</header>
+        <p>You can learn more by reading <a href="https://www.nngroup.com/">Nielsen Norman Group (n.d.). UX Design and Usability Research Articles.</a></p>
+
+      
       </section>
     </main>
   </body>
