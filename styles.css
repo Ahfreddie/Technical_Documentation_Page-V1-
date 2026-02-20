@@ -34,23 +34,23 @@ body {
 }
 
 header {
-    font-size: 1.5rem;
-    margin-bottom: 16px;
-    font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  font-weight: 600;
 }
 
 .nav-link {
-    display: block;
-    text-decoration: none;
-    color: #333;
-    padding: 8px 16px;
-    margin: 8px 0;
-    font-size: 0.95rem;
-    border-top: 1px solid #e5e7eb;
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 8px 16px;
+  margin: 8px 0;
+  font-size: 0.95rem;
+  border-top: 1px solid #e5e7eb;
 }
 
 .nav-link:hover {
-    color: #2563eb;
+  color: #2563eb;
 }
 
 .main-section {
@@ -64,16 +64,15 @@ header {
 }
 
 .main-section p {
-    text-align: justify;
+  text-align: justify;
 }
 
-.main-section p, 
+.main-section p,
 .main-section ul,
 .main-section ol,
 .main-section dl {
-    margin-bottom: 16px;
-    margin-left: 1.5rem;
-    
+  margin-bottom: 16px;
+  margin-left: 1.5rem;
 }
 
 .main-section ul,
@@ -82,39 +81,103 @@ header {
 }
 
 .main-section li {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 li span {
-    display: block;
-    font-weight: 600;
+  display: block;
+  font-weight: 600;
 }
 
 .main-section dl {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .main-section dt {
-    font-weight: 600;
-    margin-top: 16px;
+  font-weight: 600;
+  margin-top: 16px;
 }
 
 .main-section dd {
-    margin-left: 16px;
-    margin-bottom: 12px;
-    text-align: justify;
+  margin-left: 16px;
+  margin-bottom: 12px;
+  text-align: justify;
 }
 
 /* code blocks */
 pre {
-    background-color: #f1f1f1;
-    padding: 16px;
-    margin: 16px 0;
-    overflow-x: auto;
-    border-radius: 4px;
+  background-color: #f1f1f1;
+  padding: 16px;
+  margin: 16px 0;
+  overflow-x: auto;
+  border-radius: 4px;
 }
 
 code {
-    font-family: monospace;
-    font-size: 0.9rem;
+  font-family: monospace;
+  font-size: 0.9rem;
 }
+
+@media (max-width: 768px) {
+
+  /* Navbar comes to the top */
+  #navbar {
+    position: sticky;
+    top: 0;
+    
+    width: 100%;
+    /* min-width: 100%; */
+    height: 180px;
+    overflow-y: auto;
+
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding: 16px;
+  }
+
+  .nav-link {
+    padding: 6px 12px;
+    margin: 4px 0;
+    font-size: 0.9rem;
+  }
+
+  /* remove left offset */
+  .main-section {
+    margin: 0 0 48px 0;
+    padding: 24px;
+    max-width: 100%;
+
+    scroll-margin-top: 200px; /* When the browser scrolls to an anchor, it leaves 200px space above it.
+    So the heading will appear just below the sticky navbar instead of being hidden behind it.
+    */
+  }
+
+  /* Reduce paragraph side indentation */
+  .main-section p,
+  .main-section ul,
+  .main-section ol,
+  .main-section dl {
+    margin-left: 0;
+  }
+
+  /* Improve readability on small screens */
+  body {
+    font-size: 0.95rem;
+  }
+
+  header {
+    font-size: 1.3rem;
+  }
+
+  /* Adjust code blocks */
+  pre {
+    padding: 12px;
+    font-size: 0.85rem;
+  }
+
+  /* refine p */
+  .main-section p {
+    text-align: left;
+  }
+}
+ 
